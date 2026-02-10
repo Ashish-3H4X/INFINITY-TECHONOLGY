@@ -36,7 +36,7 @@ export default function Contact() {
 
     try {
       const res = await fetch(
-        `${import.meta.env.VITE_API_BASE_URL}/api/contact`,
+        `https://infinity-techonolgy-backend.onrender.com/api/contact`,
         {
           method: "POST",
           headers: {
