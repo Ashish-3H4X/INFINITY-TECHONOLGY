@@ -10,6 +10,7 @@ export default function Contact() {
     phone: "",
     message: "",
   });
+const API = import.meta.env.VITE_API_URL;
 
   const [loading, setLoading] = useState(false);
   const [success, setSuccess] = useState(false);
@@ -36,7 +37,7 @@ export default function Contact() {
     setSuccess(false);
 
     try {
-      const res = await fetch("https://infinitytechonolgy-backend.onrender.com/api/contact", {
+      const res = await fetch(`${API}/api/contact`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
