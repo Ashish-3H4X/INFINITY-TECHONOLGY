@@ -33,10 +33,10 @@ export default function Contact() {
 
     setLoading(true);
     setSuccess(false);
-
+  /// backend url to fexch the api and call the api 
     try {
       const res = await fetch(
-        `https://infinity-techonolgy-backend.onrender.com/api/contact`,
+        `http://localhost:5000/api/contact`,
         {
           method: "POST",
           headers: {
